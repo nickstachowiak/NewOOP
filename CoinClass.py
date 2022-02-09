@@ -9,6 +9,8 @@ class Coin:
 
     def __init__(self):
         self.sideup = 'Heads'
+        #self.bullet
+        #self.defense etc
 
     # The toss method generates a random number
     # in the range of 0 through 1. If the number
