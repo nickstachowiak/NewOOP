@@ -21,7 +21,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         if amount <= 0:
-            print("Error")
+            print("You fool!")
         else:
             if self.__balance >= amount:
                 self.__balance -= amount
@@ -33,6 +33,7 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+
 
     def __str__(self):
         return 'The balance is $' + format(self.__balance, ',.2f')
