@@ -8,6 +8,7 @@ def main():
     # Create an object from the Coin class.
     my_coin = c.Coin(
     )  # this creates an instance called 'my_coin' of the class 'Coin()'
+    
     #c is import name and Coin is name of class
 
     # Display the side of the coin that is facing up.

@@ -12,7 +12,7 @@ def main():
     savings = bc.BankAccount(start_bal)
 
     # Deposit the user's paycheck.
-    pay = float(input('How much were you paid this week? '))
+    pay = float(input('How much were you paid this week?: '))
     print('I will deposit that into your account.')
     savings.deposit(pay)
 
@@ -22,7 +22,7 @@ def main():
           sep='')
 
     # Get the amount to withdraw.
-    cash = float(input('How much would you like to withdraw? '))
+    cash = float(input('How much would you like to withdraw?: '))
     print('I will withdraw that from your account.')
     savings.withdraw(cash)
 
@@ -31,7 +31,7 @@ def main():
           format(savings.get_balance(), ',.2f'),
           sep='')
 
-    print(savings)
+    #print(savings)
 
 
 # Call the main function.
