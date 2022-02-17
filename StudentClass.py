@@ -1,41 +1,29 @@
-import datetime
+from datetime import date
 
 
 class Student:
 
-    def __init__(self, studentid, name, DOB, classification):
-        self.__StudentID = identification
+    def __init__(self, studentid, name, dob, classification):
+        self.__StudentID = studentid
         self.__name = name
-        self.__DOB = birthdate
+        self.__dob = dob
         self.__classification = classification
 
-    def StudentID(self):
-        self.__studentid
-
-    def name(self):
-        self.__name
-
-    def DOB(self):
-        self.__DOB
-
-    def classification(self):
-        self.__classification
-
-    def get_StudentID(self):
-        return self.__studentid
-    
-    def get_name(self):
-        return self.__name
-
-    def get_DOB(self):
-        return self.__DOB
-
-    def get_classification(self):
-        return self.__classification
-
     def age(self):
-        datetime.today()
+        today = date.today()
+        self.__age = today.year - int(self.__dob)
 
-    def get_age(self, DOB):
-        return self.age
+    def get_age(self):
+        return self.__age
+
+    def registration(self):
+        if self.__classification == 'F':
+            print('Registration Open: 11/10 - 11/12')
+        elif self.__classification == 'S':
+            print('Registration Open: 11/7 - 11/9')
+        elif self.__classification == 'J':
+            print('Regristration Open: 11/4 - 11/6')
+        else:
+            print('Registration Open: 11/1 - 11/3')
+
 
